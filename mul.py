@@ -46,7 +46,7 @@ for i in range(1, 22):
             if line[3] == i:
                 if line[-3] in alleles and line[-1] in alleles: 
                     row = raw_beta.loc[raw_beta["SNP"] == item].values.tolist()[0]
-                    beta = np.append(beta, row[5:], axis=0)
+                    # beta = np.append(beta, row[5:], axis=0)
                     beta = np.vstack([beta, row[5:]])
                     
                     row_2 = r_geno[b_r_i[0]]
